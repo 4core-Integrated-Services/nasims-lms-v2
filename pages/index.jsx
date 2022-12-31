@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../components/Hero/HeroSection";
+// import HeroSection from "../components/Hero/HeroSection";
 import BlogSection from "../components/BlogSection/BlogSection";
 import BrandSection from "../components/BrandSection/BrandSection";
 import CoursesCarousel from "../components/CoursesCarousel/CoursesCarousel";
@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <HeroSection />
+      {/* <HeroSection /> */}
       <BrandSection />
       <FeaturesSection />
       <CoursesCarousel />
