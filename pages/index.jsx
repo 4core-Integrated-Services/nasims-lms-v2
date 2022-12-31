@@ -1,7 +1,6 @@
 import React from "react";
-
 import BlogSection from "../components/BlogSection/BlogSection";
-import HeroSection from "../components/Hero/HeroSection";
+import Hero from "../components/Hero/Hero";
 import BrandSection from "../components/BrandSection/BrandSection";
 import CoursesCarousel from "../components/CoursesCarousel/CoursesCarousel";
 import FeaturesSection from "../components/FeaturesSection/FeaturesSection";
@@ -25,7 +24,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <HeroSection />
+      <Hero />
       <BrandSection />
       <FeaturesSection />
       <CoursesCarousel />

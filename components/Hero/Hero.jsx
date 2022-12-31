@@ -2,7 +2,7 @@ import react from "react";
 import Fade from "react-reveal/Fade";
 import Typed from "react-typed";
 
-export default function HeroSection() {
+export default function Hero() {
   return (
     <div
       className="relative overflow-hidden bg-no-repeat bg-cover h-[100vh]"
