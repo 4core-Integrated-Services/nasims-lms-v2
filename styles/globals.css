@@ -1,26 +1,106 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li > ul {
+  transform: translatex(100%) scale(0);
+}
+li:hover > ul {
+  transform: translatex(101%) scale(1);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.bloby:after,
+.bloby:before {
+  content: "";
+  display: flex;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
-* {
-  box-sizing: border-box;
+.bloby:before {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: animate_bg;
+  animation-name: animate_bg;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  background-image: url(/assets/images/blobs.png);
+  background-position: 100%;
+  background-size: 200%;
+  opacity: 0.2;
+  z-index: -2;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.bloby:after {
+  background-color: hsla(0, 0%, 84%, 0.44);
+  z-index: -1;
+}
+@keyframes animate_bg {
+  0% {
+    background-position-x: 0;
+    background-position-y: 0;
   }
-  body {
-    color: white;
-    background: black;
+
+  10% {
+    background-position-x: 20%;
+    background-position-y: 0;
+  }
+
+  20% {
+    background-position-x: 30%;
+    background-position-y: 20%;
+  }
+
+  30% {
+    background-position-x: 20%;
+    background-position-y: 30%;
+  }
+
+  40% {
+    background-position-x: 30%;
+    background-position-y: 40%;
+  }
+
+  50% {
+    background-position-x: 50%;
+    background-position-y: 60%;
+  }
+
+  60% {
+    background-position-x: 40%;
+    background-position-y: 60%;
+  }
+
+  70% {
+    background-position-x: 70%;
+    background-position-y: 50%;
+  }
+
+  80% {
+    background-position-x: 80%;
+    background-position-y: 70%;
+  }
+
+  90% {
+    background-position-x: 100%;
+    background-position-y: 80%;
+  }
+
+  to {
+    background-position-x: 90%;
+    background-position-y: 100%;
   }
 }
