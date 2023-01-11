@@ -33,7 +33,8 @@ export default function Navbar() {
     }
   }
   return (
-    <nav className=" px-2 sm:px-4 py-2.5 bg-gray-900 fixed w-full z-20 top-0 left-0 border-b  border-gray-600">
+    // <nav className=" px-2 sm:px-4 py-2.5 bg-gray-900 fixed w-full z-20 top-0 left-0 border-b  border-gray-600">
+    <nav className="2xl:px-2 lg:px-12 md:px-10  xs:px-3 bg-gray-900 w-full z-20 top-0 border-b xs:py-1 fixed border-gray-600">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link href="/">
           <span className="flex items-center">
@@ -181,7 +182,7 @@ export default function Navbar() {
           }
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 mt-4 border md:static  absolute md:h-auto top-11 h-[100vh] left-0 w-[70vw] md:w-auto transition-all md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  bg-gray-900 md:bg-gray-900 border-gray-900">
+          <ul className="flex flex-col p-4 mt-4 border md:static  absolute md:h-auto top-7 h-[100vh] left-0 w-[70vw] md:w-auto transition-all md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  bg-gray-900 md:bg-gray-900 border-gray-900">
             <div className="group inline-block">
               <button className="outline-none focus:outline-none border-none px-3 py-1 bg-transparent rounded-sm flex items-center min-w-32 text-gray-400 hover:text-green-500">
                 <span className="pr-1 font-semibold flex-1">Explore</span>

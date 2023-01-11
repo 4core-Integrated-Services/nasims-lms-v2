@@ -7,7 +7,8 @@ import { GrCertificate } from "react-icons/gr";
 
 export default function FeaturesSection() {
   return (
-    <div className="bg-white w-full xs:mb-[64rem] h-[40rem]">
+    // <div className="bg-white w-full xs:mb-[64rem] h-[40rem]">
+    <div className="bg-white w-full h-[40rem] 2xl:mb-[62rem] lg:mb-[62rem] md:mb-[66rem]  xs:mb-[64rem]">
       <div
         className="w-full h-full bg-cover bg-top  "
         style={{

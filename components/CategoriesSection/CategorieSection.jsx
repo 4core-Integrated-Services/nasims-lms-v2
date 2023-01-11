@@ -10,13 +10,13 @@ export default function CategorieSection({ categoriesId }) {
     (data) => data.name == categoriesId
   );
   return (
-    <div className="mt-[5rem] w-full">
+    <div className="mt-[5rem] w-full md:overflow-x-hidden lg:overflow-x-auto">
       <div className="w-[70%]  mx-auto">
         <div className="p-8">
-          <h1 className="text-3xl font-semibold text-slate-600  ">
+          <h1 className="lg:text-3xl font-semibold xs:text-xl xs:-translate-x-16 md:translate-x-0 text-slate-600  ">
             {categories?.name ?? "Development"} Courses
           </h1>
-          <h4 className="mt-3 font-medium text-slate-600">
+          <h4 className="mt-3 font-medium xs:-translate-x-16  md:translate-x-0 xs:text-md text-slate-600">
             Courses to get you started
           </h4>
           <PopularTopics />

@@ -8,7 +8,7 @@ export default function LottieSection() {
   return (
     <Fade bottom>
       <div className="w-full  mt-[8rem] mb-[10rem] md:-mt-[5rem] xs:-mt-[10rem]">
-        <div className="container flex mx-auto  w-[80%] gap-16  pt-16 xs:flex-col lg:flex-row lg:mt-[7rem]">
+        <div className="container flex mx-auto  w-[80%] gap-16  pt-16 xs:flex-col lg:flex-row 2xl:mt-[7rem] lg:-mt-[15rem] lg:py-[5rem]">
           <div className=" w-full flex items-center justify-end  ">
             <Lottie loop animationData={LottieJson} play />
           </div>

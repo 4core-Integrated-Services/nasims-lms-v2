@@ -5,11 +5,11 @@ import { RatingIcon } from "../mock/ratings";
 
 export default function AllCoursesSection({ categories }) {
   return (
-    <div className="w-full mt-10">
-      <h1 className="font-bold text-2xl text-slate-600 font-[Roboto]">
+    <div className="w-full mt-10 xs:-translate-x-16 md:translate-x-0">
+      <h1 className="font-bold text-2xl xs:text-lg text-slate-600 font-[Roboto]">
         All {categories?.name} Courses
       </h1>
-      <div className="mt-6">
+      <div className="mt-6 xs:w-[23rem] md:w-auto">
         {CoursesCarouselData.map((courses) => {
           return (
             <div
@@ -19,7 +19,7 @@ export default function AllCoursesSection({ categories }) {
               <div className="pl-3 mb-3">
                 <Link href={`/course-details/${courses.id}`} passHref>
                   <div
-                    className="w-[15rem] h-[8rem] bg-cover bg-top rounded-sm brightness-90 hover:brightness-50 transition-all"
+                    className="md:w-[15rem] xs:w-24  xs:h-28 xs:translate-y-6 md:translate-y-0 md:h-[8rem] bg-cover bg-top rounded-sm brightness-90 hover:brightness-50 transition-all"
                     style={{
                       backgroundImage: `url(${courses.thumbnail})`,
                     }}
@@ -28,7 +28,7 @@ export default function AllCoursesSection({ categories }) {
               </div>
 
               <div className="mt-3">
-                <h4 className="capitalize text-xl font-medium text-slate-600">
+                <h4 className="capitalize xs:text-lg text-xl font-medium text-slate-600">
                   {courses?.title}
                 </h4>
                 <p className="w-full text-sm mt-2 text-slate-500">{`Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games`}</p>

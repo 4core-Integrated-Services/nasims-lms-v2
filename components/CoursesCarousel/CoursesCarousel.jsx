@@ -26,7 +26,8 @@ const breakpoints = {
 
 export default function CoursesCarousel() {
   return (
-    <section className=" mt-[20rem] flex-col flex items-center xs:hidden md:block lg:block lg:-mt-[45rem] md:-mt-[20rem]">
+    // <section className=" mt-[20rem] flex-col flex items-center xs:hidden md:block lg:block lg:-mt-[45rem] md:-mt-[20rem]">
+    <section className=" 2xl:-mt-[45rem] lg:-mt-[42rem]  md:-mt-[20rem] xs:-mt-[5rem] xs:mb-[10rem]">
       <h1 className="text-center font-[heebo] font-medium lg:text-5xl xs:text-xl md:text-3xl mb-8 capitalize  mx-auto  text-slate-700 w-[50%]">
         Explore our <span className="text-green-400">Wide range</span> of
         courses
@@ -54,7 +55,8 @@ export default function CoursesCarousel() {
             {CoursesCarouselData.map((course) => {
               return (
                 <SwiperSlide key={course.id}>
-                  <div className="bg-white shadow-md w-[90%] h-[100%] flex flex-col rounded-md mt-10">
+                  {/* <div className="bg-white shadow-md w-[90%] h-[100%] flex flex-col rounded-md mt-10"> */}
+                  <div className="bg-white shadow-md 2xl:w-[90%] 2xl:h-full 2xl:flex 2xl:flex-col rounded-md 2xl:mt-10 lg:w-full  lg:h-full lg:flex lg:flex-col lg:mt-10">
                     <div className="block h-[11rem] w-full ">
                       <div
                         className="h-full w-full bg-cover bg-top"
@@ -67,7 +69,7 @@ export default function CoursesCarousel() {
                       ></div>
                     </div>
                     <div className="relative">
-                      <span className="absolute -top-4 left-[50%] translate-x-[-50%] bg-green-500 py-1 px-4 text-white rounded-sm block font-[Noto sans] capitalize">
+                      <span className="absolute -top-4 left-[50%] translate-x-[-50%] lg:text-sm 2xl:text-sm md:-mt-5  bg-green-500 py-1 px-4 text-white rounded-sm text-center font-[Noto sans] capitalize">
                         {course?.category ?? "Development"}
                       </span>
                       <div className="flex mt-5 items-center">
@@ -81,15 +83,17 @@ export default function CoursesCarousel() {
                         ></div>
                         <span className="text-green-400 ml-2">
                           {" "}
-                          <span className="text-gray-500 font-medium">By </span>
+                          <span className="text-gray-500 lg:text-xs 2xl:text-sm  lg:pt-6 font-medium">
+                            By{" "}
+                          </span>
                           <Link href="/" passHref>
-                            <span className="underline">
+                            <span className="underline lg:text-xs">
                               {course?.instructorName ?? "Jeff Doe"}
                             </span>
                           </Link>
                         </span>
                       </div>
-                      <h4 className="font-medium mt-2 md:text-sm ml-3 text-slate-700 block capitalize">
+                      <h4 className="font-medium lg:text-xs 2xl:text-sm mt-2 md:text-sm ml-3 text-slate-700 block capitalize">
                         {course?.title ?? " Web development for beginners"}
                       </h4>
                       <div className="flex justify-between ">
@@ -103,7 +107,7 @@ export default function CoursesCarousel() {
                             })}
                         </span>
 
-                        <span className="mr-3 text-green-500 font-bold font-[Roboto] capitalize">
+                        <span className="mr-3 text-green-500 lg:text-xs font-bold font-[Roboto] capitalize">
                           {course?.level ?? "Beginner"}
                         </span>
                       </div>

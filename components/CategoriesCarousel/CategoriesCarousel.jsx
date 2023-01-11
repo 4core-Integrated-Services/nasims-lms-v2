@@ -8,12 +8,29 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+const breakpoints = {
+  1408: {
+    slidesPerView: 5,
+  },
+  1204: {
+    slidesPerView: 5,
+  },
+  768: {
+    slidesPerView: 3,
+  },
+  640: {
+    slidesPerView: 2,
+  },
+  320: {
+    slidesPerView: 1,
+  },
+};
 export default function CategoriesCarousel() {
   return (
-    <div className="mt-8">
+    <div className="mt-8 xs:-translate-x-16 md:translate-x-0">
       {" "}
       <Tab.Group>
-        <Tab.List className="flex justify-start space-x-1 rounded-sm bg-slate-100 p-1">
+        <Tab.List className="flex justify-start space-x-1 rounded-sm bg-slate-100 xs:w-[23rem] md:w-auto p-1">
           <div className="w-[60%} flex gap-16 ml-6">
             <Tab
               className={({ selected }) =>
