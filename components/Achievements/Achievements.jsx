@@ -9,8 +9,8 @@ export default function Achievements() {
           My <span className="text-green-500">Achievements</span>
         </h1>
         <p className="text-center mt-8 text-xl text-slate-500">
-          {` You haven't been <span className="text-green-500">awarded</span> any
-          certificates yet`}
+          You have not been <span className="text-green-500">awarded</span> any
+          certificates yet
         </p>
 
         <div
